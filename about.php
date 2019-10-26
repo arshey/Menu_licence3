@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menu Activ</title>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-
-    <?php
-    $page = "about";
-        include('inc/nav.php')
-    ?>
-    
+<?php
+$page = "about";
+include ('inc/header.php');
+include('inc/nav.php');
+?>
     <h1>ABOUT</h1>
 </body>
 </html>
