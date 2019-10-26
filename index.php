@@ -1,8 +1,8 @@
-
-    <?php
-        $page = "home";
-        include('inc/nav.php');
-    ?>
+<?php
+$page = "home";
+include ('inc/header.php');
+include('inc/nav.php');
+?>
     
 
 
