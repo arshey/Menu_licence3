@@ -28,13 +28,15 @@ include('inc/nav.php');
 
     <?php
 
-    if (isset($_POST['nom']) && isset($_POST['prenom'])) {
+    // if (isset($_POST['nom']) && isset($_POST['prenom'])) {
 
-        $prenom = htmlspecialchars($_POST['prenom']);
-        $nom = htmlspecialchars($_POST['nom']);
+    //     $prenom = htmlspecialchars($_POST['prenom']);
+    //     $nom = htmlspecialchars($_POST['nom']);
        
-        echo "Bonjour, votre nom c'est ".$nom. " et votre prenom c'est ". $prenom;
-    }
+    //     echo "Bonjour, votre nom c'est ".$nom. " et votre prenom c'est ". $prenom;
+    // }
+
+    
 
 
 ?>
