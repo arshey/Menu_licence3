@@ -28,7 +28,7 @@ li a:hover:not(.active) {
   background-color: #4caf50;
 }
 
-.login-form {
+/* .login-form {
   width: 450px;
   margin: 100 px auto;
 }
@@ -51,4 +51,5 @@ li a:hover:not(.active) {
 .btn {
   font-size: 15px;
   font-weight: bold;
-}
+
+} */
