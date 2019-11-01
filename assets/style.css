@@ -28,27 +28,10 @@ li a:hover:not(.active) {
   background-color: #4caf50;
 }
 
-.login-form {
-  width: 450px;
-  margin: 100 px auto;
+.bs-example {
+  margin: 20px 0px 0px 40%;
 }
 
-.login-form form {
-  margin-bottom: 15 px;
-  background: #f7f7f7;
-  box-shadow: 0px 2px 2 px rgba(0, 0, 0, 0.3);
-}
-
-.login-form h2 {
-  margin: 0 0 15px;
-}
-
-.form-control .btn {
-  min-height: 38px;
-  border-radius: 2 px;
-}
-
-.btn {
-  font-size: 15px;
-  font-weight: bold;
+.red {
+  color: red;
 }
