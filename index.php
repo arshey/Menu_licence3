@@ -32,8 +32,10 @@ include('inc/nav.php');
         
         if(empty($imgFile)){
 			$errMSG = "Please Select Image File.";
-		} else {
-			$upload_dir = 'assets/uploads/'; 
+		}
+		else
+		{
+			$upload_dir = 'user_images/'; 
 	
 			$imgExt = strtolower(pathinfo($imgFile,PATHINFO_EXTENSION)); 
 		
@@ -47,8 +49,7 @@ include('inc/nav.php');
 			if(in_array($imgExt, $valid_extensions)){			
 				
 				if($imgSize < 5000000)				{
-                    move_uploaded_file($tmp_dir,$upload_dir.$image);
-                    echo "Wesh c bon";
+					move_uploaded_file($tmp_dir,$upload_dir.$image);
 				}
 				else{
 					$errMSG = "Désolé l'image est un peu trop grande.";
@@ -58,33 +59,42 @@ include('inc/nav.php');
 				$errMSG = "Désolé seule les format 'jpeg', 'jpg', 'png', 'gif' sont autorisés";		
 			}
 		}
-       
-        echo "Bonjour, votre nom c'est ".$nom. " et votre prenom c'est ". $prenom;
 
     }
     }
 
 ?>
 
+ 
     <div class="container mt-5">
+
+    <?php
+		if(isset($errMSG)){
+	?>
+        <div class="container text-center">
+            <div class="row">
+            
+            <div class="row col-sm">
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-info-sign"></span> <strong><?php echo $errMSG; ?></strong>
+                </div>
+            </div>
+            </div>
+        </div>
+
+		
+	<?php
+		}
+	?>
+
+
         <div class="jumbotron">
         <h1 class="display-4">Home</h1>
         <hr class="my-4">
         <p class="lead">
     <div class="login-form">
 
-        <?php
-				if(isset($errMSG)){
-						?>
-			            	<span class="glyphicon glyphicon-info-sign"></span> <strong><?php echo $errMSG; ?></strong>
-			            <?php
-				}
-				else if(isset($successMSG)){
-					?>
-			              <strong><span class="glyphicon glyphicon-info-sign"></span> <?php echo $successMSG; ?></strong>
-			       <?php
-				}
-				?>  
+       
         <form action="" method="POST" name="frmAdd" class="ml-5 text-center" enctype="multipart/form-data">
             <h2 class="text-center">Ajouter des informations</h2>
 
