@@ -58,8 +58,8 @@ include('inc/nav.php');
 			else{
 				$errMSG = "Désolé seule les format 'jpeg', 'jpg', 'png', 'gif' sont autorisés";		
 			}
-		}
-
+        }
+        
     }
     }
 
