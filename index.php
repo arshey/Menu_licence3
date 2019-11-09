@@ -7,18 +7,10 @@ include('inc/nav.php');
 $req = $bdd->prepare("SELECT * FROM users");
 $req->execute();
 $req2 = $req->fetchAll(); 
-?>
-
-
-=======
-include('inc/header.php');
-include('inc/nav.php');
 
  error_reporting( ~E_NOTICE );
 
     if (isset($_POST['submit'])) {
-
-       
 
         $prenom = htmlspecialchars($_POST['prenom']);
         $nom = htmlspecialchars($_POST['nom']);
@@ -124,7 +116,7 @@ include('inc/nav.php');
             
                 <input type="submit" name="submit" class="btn btn-primary">
 
->>>>>>> a5ff35c6f9fa29df5deb944fc741215c5577035a
+
 
 <div class="container ">
     <div class="container mt-5">
